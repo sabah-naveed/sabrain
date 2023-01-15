@@ -59,13 +59,9 @@ const App = () => (
           <Resume />
           
 
-          
-
           <h1>
             Hi im sabah
           </h1>
-
-          <Spline scene="https://prod.spline.design/b9oisYUnBOi1SGlg/scene.splinecode" />
           
 
 
