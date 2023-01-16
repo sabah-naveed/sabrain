@@ -35,7 +35,7 @@
 
 import styles from "./style";
 import { Navbar, Hero, Resume, Socials } from "./components";
-import Spline from '@splinetool/react-spline';
+//import Spline from '@splinetool/react-spline';
 
 
 
@@ -65,7 +65,7 @@ const App = () => (
             Hi im sabah
           </h1>
 
-          <Spline scene="https://prod.spline.design/b9oisYUnBOi1SGlg/scene.splinecode" />
+            
           
 
 
