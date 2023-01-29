@@ -19,21 +19,7 @@ const Hero = () => (
 
       <span className='font-poppins font-normal ss:text-[30px] text-[52px] text-white ss:leading-[50px] leading-[75px] w-full mt-7'>
         I am :
-        <TypeWriterEffect
-          startDelay={20}
-          cursorColor="#c89df0"
-          multiText={[
-            'a student ',
-            'a software engineer',
-            'an app developer',
-            'a racoon lover',
-            'a brain and computer enthusiast.',
-            
-            
-          ]}
-          multiTextDelay={1000}
-          typeSpeed={30}
-        />
+        
       </span>
     </div>
 
