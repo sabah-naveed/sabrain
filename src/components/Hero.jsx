@@ -1,7 +1,10 @@
+import React from "react";
 import styles from '../style';
 import { brain } from '../assets';
 
 import TypeWriterEffect from 'react-typewriter-effect';
+import Typewriter from 'typewriter-effect';
+
 
 
 const Hero = () => (
@@ -19,7 +22,33 @@ const Hero = () => (
 
       <span className='font-poppins font-normal ss:text-[30px] text-[52px] text-white ss:leading-[50px] leading-[75px] w-full mt-7'>
         I am :
-        
+
+      <Typewriter
+        onInit={(typewriter) => {
+          typewriter.typeString('a student')
+            .pauseFor(2500)
+            .deleteChars(6)
+            .start();
+          typewriter.typeString('oftware engineer')
+            .pauseFor(2500)
+            .deleteChars(18)
+            .start();
+          typewriter.typeString('n app developer')
+            .pauseFor(2500)
+            .deleteChars(13)
+            .start();
+          typewriter.typeString('raccoon lover')
+            .pauseFor(2500)
+            .deleteChars(13)
+            .start();
+          typewriter.typeString('brain and computer enthusiast.')
+            .pauseFor(2500)
+            
+            .stop();
+        }}
+      />
+
+
       </span>
     </div>
 
