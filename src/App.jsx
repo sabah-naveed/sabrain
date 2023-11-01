@@ -1,13 +1,21 @@
-import { useState } from 'react'
-import reactLogo from './assets/jobit.png'
-import viteLogo from '/vite.svg'
-
-
-function App() {
+import { BrowserRouter } from "react-router-dom"
+import { About, Contact, Experience, Feedbacks, Hero, Navbar, Tech, Works, StarsCanvas } from "./components"
+const App = () => {
   return (
-    <div>
-      3d dev portfolio i hope this works
-    </div>
+    <BrowserRouter>
+      <div className="relative z-0 bg-primary">
+        <div className="bg-hero-pattern bg-cover bg-no-repeat bg-center">
+          <Navbar />
+          <Hero />
+        </div>
+        <About />
+        <Experience />
+        <Works />
+        <div className="relative z-0">
+          <Contact />
+        </div>
+      </div>
+    </BrowserRouter>
   )
 }
 
