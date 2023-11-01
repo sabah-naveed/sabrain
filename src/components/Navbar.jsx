@@ -1,4 +1,4 @@
-import {useEffect, useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import { Link } from 'react-router-dom';  //use to navigate to other parts of the page
 
 import {styles} from '../styles';
