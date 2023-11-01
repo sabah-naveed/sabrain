@@ -4,8 +4,6 @@ import viteLogo from '/vite.svg'
 
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <div>
       3d dev portfolio i hope this works
