@@ -4,6 +4,8 @@ import {motion} from 'framer-motion'
 import {styles} from '../styles'
 import {ComputersCanvas} from './canvas'
 
+import Typewriter from 'typewriter-effect';
+
 const Hero = () => {
   return (
     <section className="relative w-full h-screen">
@@ -20,7 +22,30 @@ const Hero = () => {
             </span>
           </h1>
           <p className={`${styles.heroSubText} mt-2 text-white-100`}>
-            I am a student, app developer, designer, <br className='sm:block hidden'/>aws architect, raccoon lover, and a lot more.
+            I am:
+            <Typewriter
+            onInit={(typewriter) => {
+              typewriter.typeString('a CS student')
+                .pauseFor(2500)
+                .deleteChars(10)
+                .start();
+              typewriter.typeString('software engineer')
+                .pauseFor(2500)
+                .deleteChars(18)
+                .start();
+              typewriter.typeString('n app developer')
+                .pauseFor(2500)
+                .deleteChars(15)
+                .start();
+              typewriter.typeString(' raccoon lover')
+                .pauseFor(2500)
+                .deleteChars(13)
+                .start();
+              typewriter.typeString('brain and computer enthusiast.')
+                .pauseFor(2500)
+                .stop();
+            }}
+            />
           </p>
         </div>
       </div>

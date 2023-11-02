@@ -3,12 +3,18 @@ import {Tilt} from 'react-tilt'
 import { motion } from "framer-motion";
 
 import { styles } from "../styles";
-import { github } from "../assets";
+import { github, linkedin, appstore } from "../assets";
 import { SectionWrapper } from "../hoc";
 import { projects } from "../constants";
 import { fadeIn, textVariant } from "../utils/motion";
 
 const ProjectCard = ({index, name, description, tags, image, source_code_link}) => {
+  let icon = github;
+  if(name == 'NJ Connect') {
+    icon = linkedin;
+  } else if (name === 'Score.IO: Virtual Scoreboard') {
+    icon = appstore;
+  }
   return (
     <motion.div
       variants={fadeIn("up", "spring", 0.5*index, 0.75)}
@@ -33,8 +39,8 @@ const ProjectCard = ({index, name, description, tags, image, source_code_link}) 
               className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
             >
               <img
-                src={github}
-                alt="github"
+                src={icon}
+                alt="icon"
                 className="w-5 h-5 object-contain"
               />
 
